@@ -1,0 +1,1 @@
+# plugin-optimizador-de-imagenes
