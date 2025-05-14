@@ -1,0 +1,220 @@
+/* Archivo: assets/css/admin.css */
+.card {
+    background: #fff;
+    border: 1px solid #ccd0d4;
+    border-radius: 4px;
+    margin-bottom: 20px;
+    padding: 20px;
+    box-shadow: 0 1px 1px rgba(0,0,0,0.04);
+}
+
+.compression-slider {
+    width: 300px;
+    vertical-align: middle;
+}
+
+#compression-value {
+    display: inline-block;
+    width: 50px;
+    text-align: center;
+    font-weight: bold;
+    margin-left: 10px;
+}
+
+.progress-bar-container {
+    background-color: #f0f0f1;
+    border-radius: 4px;
+    margin: 15px 0;
+    height: 20px;
+    overflow: hidden;
+}
+
+.progress-bar {
+    background-color: #FA4619;
+    height: 100%;
+    width: 0;
+    transition: width 0.3s ease;
+}
+
+.progress-text {
+    margin-bottom: 15px;
+}
+
+.optimization-controls {
+    margin-bottom: 15px;
+}
+
+#optimization-log {
+    max-height: 300px;
+    overflow-y: auto;
+    border: 1px solid #ddd;
+    padding: 10px;
+    background: #f9f9f9;
+    font-family: monospace;
+    font-size: 12px;
+}
+
+.log-entry {
+    margin-bottom: 3px;
+    line-height: 1.5;
+    border-bottom: 1px solid #f0f0f0;
+    padding-bottom: 3px;
+}
+
+.log-time {
+    color: #777;
+    margin-right: 10px;
+}
+
+.log-success {
+    color: #46b450;
+}
+
+.log-error {
+    color: #dc3232;
+}
+
+.log-warning {
+    color: #ffb900;
+}
+
+#optimization-stats {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+}
+
+#optimization-stats p {
+    flex-basis: 48%;
+    margin: 5px 0;
+    padding: 10px;
+    background: #f8f8f8;
+    border-radius: 4px;
+}
+
+#optimization-stats span {
+    font-weight: bold;
+    color: #FA4619;
+}
+
+.buzzcr-optimizer-wrap {
+    background: #f7f7f7;
+    /* Quitamos el fondo negro, color neutro claro */
+    padding: 24px 0 40px 0;
+}
+.buzzcr-optimizer-wrap .buzzcr-columns {
+    width: 100%;
+    display: flex;
+    flex-direction: row;
+    gap: 32px;
+    margin-top: 20px;
+    align-items: flex-start;
+}
+.buzzcr-optimizer-wrap .buzzcr-col {
+    flex: 1 1 0;
+    min-width: 340px;
+    max-width: 700px;
+    display: flex;
+    flex-direction: column;
+    gap: 24px;
+    background: #fff;
+    border-radius: 8px;
+    box-shadow: 0 2px 8px rgba(0,0,0,0.08);
+    border: 2px solid #FA4619;
+    padding: 24px 18px 32px 18px;
+    color: #181818;
+}
+.buzzcr-optimizer-wrap .buzzcr-col:last-child {
+    min-height: 100%;
+}
+.buzzcr-optimizer-wrap .buzzcr-col .card {
+    background: transparent;
+    border: none;
+    box-shadow: none;
+    padding: 0;
+    margin: 0 0 18px 0;
+}
+.buzzcr-optimizer-wrap .buzzcr-col .card:last-child {
+    margin-bottom: 0;
+}
+.buzzcr-optimizer-wrap .buzzcr-col .card h2 {
+    color: #FA4619;
+    border-left: 4px solid #FA4619;
+    padding-left: 8px;
+    margin-bottom: 16px;
+}
+.buzzcr-optimizer-wrap h1 {
+    color: #FA4619;
+    font-size: 28px;
+    font-weight: bold;
+    letter-spacing: 1px;
+    display: flex;
+    align-items: center;
+    gap: 10px;
+}
+.buzzcr-optimizer-wrap h1 a {
+    color: #181818;
+    font-weight: bold;
+    font-size: 18px;
+}
+.buzzcr-optimizer-wrap h1 a:hover {
+    color: #FA4619;
+}
+.buzzcr-optimizer-wrap .button.button-primary {
+    background: #FA4619;
+    border-color: #FA4619;
+    color: #fff;
+    font-weight: bold;
+}
+.buzzcr-optimizer-wrap .button.button-primary:hover {
+    background: #d53a13;
+    border-color: #d53a13;
+}
+.buzzcr-optimizer-wrap .button {
+    color: #FA4619;
+    border-color: #FA4619;
+    background: #fff;
+    font-weight: bold;
+}
+.buzzcr-optimizer-wrap .button:hover {
+    background: #FA4619;
+    color: #fff;
+}
+.notice.notice-warning {
+    border-left: 6px solid #FA4619;
+    background: #fff4f0;
+    color: #181818;
+}
+
+.buzzcr-fullwidth-doc {
+    max-width: 1400px;
+    margin: 32px auto 0 auto;
+    width: 100%;
+}
+.buzzcr-fullwidth-doc .card {
+    border: 2px solid #FA4619;
+    background: #fff;
+    color: #181818;
+    box-shadow: 0 2px 8px rgba(0,0,0,0.04);
+    border-radius: 8px;
+    padding: 32px 28px 32px 28px;
+}
+.buzzcr-fullwidth-doc h2 {
+    color: #FA4619;
+    border-left: 4px solid #FA4619;
+    padding-left: 8px;
+    margin-bottom: 18px;
+}
+@media (max-width: 900px) {
+    .buzzcr-fullwidth-doc .card {
+        padding: 18px 8px 18px 8px;
+    }
+    .buzzcr-optimizer-wrap .buzzcr-columns {
+        flex-direction: column;
+        gap: 0;
+    }
+    .buzzcr-optimizer-wrap .buzzcr-col {
+        max-width: 100%;
+        margin-bottom: 32px;
+    }
+}
